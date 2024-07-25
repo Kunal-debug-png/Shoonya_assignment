@@ -22,16 +22,17 @@ public class Retreat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String description;
     private Long date;
     private String location;
-    private int price;
+    private Double price;
     private String type;
     private String condition;
     private String image;
-    private int duration;
+    private Integer duration;
+
     @ElementCollection
     private List<String> tag;
-
 }
